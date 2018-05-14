@@ -1,0 +1,16 @@
+language: none
+
+services:
+   - mysql
+
+
+build:
+  pre_ci_boot:
+    image_name: drydock/u14all
+    image_tag: master
+    pull: true
+    
+    
+  ci:
+    - mysql --version
+    
